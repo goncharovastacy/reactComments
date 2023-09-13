@@ -1,0 +1,33 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    input {
+      width: 100%;
+    }
+    button {
+      padding: 7px 13px;
+      background-color: rgb(131, 47, 209);
+      border: none;
+      border-radius: 10px;
+    }
+  }
+  p,
+  button,
+  input {
+    font-size: 20px;
+  }
+  .comments {
+    margin: 40px 0 0;
+    .comment {
+      border-bottom: 1px solid rgb(158, 158, 158);
+    }
+    .new-comment p {
+      color: rgb(131, 47, 209);
+    }
+  }
+}
