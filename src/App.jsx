@@ -2,7 +2,7 @@ import Comments from "./components/Comments";
 import "./App.scss";
 
 function App() {
-  return <Comments></Comments>;
+  return <Comments />;
 }
 
 export default App;

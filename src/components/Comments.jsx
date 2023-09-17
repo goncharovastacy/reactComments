@@ -7,7 +7,7 @@ function Comments() {
   const [error, setError] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (commentText !== "") {
+    if (commentText.trim() !== "") {
       const newArr = [checkSpam(commentText), ...commentsArray];
       setCommentsArray(newArr);
       setCommentText("");
@@ -36,7 +36,7 @@ function Comments() {
             text={el}
             key={i}
             className={i === 0 ? "new-comment comment" : "comment"}
-          ></Comment>
+          />
         ))}
       </div>
     </div>
